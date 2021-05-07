@@ -1,0 +1,78 @@
+
+  
+  #ville {
+    text-transform: capitalize;
+  }
+  
+  #temperature {
+    font-size: 4em;
+  }
+
+  #block
+
+  {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+
+
+ #row
+ {
+     background-color: black;
+ }
+  
+.container
+{
+
+    margin-top: 12%;
+    
+}
+
+
+#ville
+
+{
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(7, 58, 0);
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+    
+}
+
+#changer
+{
+
+  
+    color:white;
+}
+
+
+#changer:hover
+
+{
+
+    color: rgb(0, 0, 0);
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+@media only screen and (max-width: 480px) {
+    .container {
+  
+    margin-top: 30%;
+    }
+
+}
