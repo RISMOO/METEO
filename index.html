@@ -12,13 +12,11 @@
     <meta property="og:title" content="RISMO DEVOPS" />
     <meta property="og:description"
         content="METEO DU JOUR  " />
-    <meta property="og:image" content="img/bit.png" />
-   
-    <link rel="icon" type="image/x-icon" href='img/Sale.webp' />
+    <meta property="og:image" content="img/fonds.png" />
+
+    <link rel="icon" type="image/x-icon" href='https://rismo.fr/img/Sale.webp' />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    
-
-
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -30,20 +28,17 @@
     <title>METEO</title>
   </head>
   <body>
-    <video playsinline autoplay muted loop poster="img/fonddecran.png" id="bgvid">
-    
-      <source src="img/sky1.mp4" type="video/mp4">
+    <video playsinline autoplay muted loop id="bgvid">
+      <source src="img/sun.webm" type="video/mp4" id="vid">
     </video>
     <div class="container">
   
         <div class="row justify-content-center">
-          
           <div class="col-md-8">
-           
-
+        
             <!-- Titre -->
            <div id="block" class="mb-4 text-center">
-         <img src="img/sunny.png" width="150">
+         <img src="img/cloudy.png" width="150" id="logo">
            </div>
             <!-- Ville / Temperature -->
             <div class="text-center">
@@ -54,23 +49,22 @@
                   0
                 </span><span class="text-light"> °C</span>
               </div>
+
+              <div id="humidity">
+            <span class="text-light">Humidité : </span>  <span id="humidity_label" class="text-light">0</span>
+                <span class="text-light">%</span>
+              </div>
               <br>
             </div>
-        
         </div>
-        
-         
           <div class="col-md-8 text-center">
             <!-- Changer de ville -->
             <div>
-                <button type="button" id="changer" class="btn btn-outline-light text-uppercase">Changer de ville</button>
+                <button type="button" id="changer" class="btn btn-outline-light text-uppercase"><span class="text-light">Changer de ville</span></button>
             </div> 
-           
             </div>
           </div>
-        
         </div>
-        
       </div>
   
     <script src="script.js"></script>
